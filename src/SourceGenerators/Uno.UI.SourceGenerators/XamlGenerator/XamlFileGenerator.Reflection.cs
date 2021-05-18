@@ -792,7 +792,7 @@ namespace Uno.UI.SourceGenerators.XamlGenerator
 				{
 					// Special case for the legacy type "Windows.UI.Xaml.Controls.Popup" where
 					// using "Popup" in XAML will always point to the Primitives version of the type.
-					return _findType(XamlConstants.Namespaces.Primitives + ".Popup");
+					return _findType!(XamlConstants.Namespaces.Primitives + ".Popup");
 				}
 
 				foreach (var clrNamespace in clrNamespaces)
