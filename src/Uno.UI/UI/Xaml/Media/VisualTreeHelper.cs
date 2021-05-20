@@ -147,14 +147,14 @@ namespace Windows.UI.Xaml.Media
 				.AsReadOnly();
 		}
 
-		public static IReadOnlyList<Popup> GetOpenPopupsForXamlRoot(XamlRoot xamlRoot)
+		public static IReadOnlyList<Controls.Primitives.Popup> GetOpenPopupsForXamlRoot(XamlRoot xamlRoot)
 		{
 			if (xamlRoot == XamlRoot.Current)
 			{
 				return GetOpenPopups(Window.Current);
 			}
 
-			return new Popup[0];
+			return new Controls.Primitives.Popup[0];
 		}
 
 
